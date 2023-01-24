@@ -26,5 +26,21 @@ public arrayLength(){
 }
 
 
+public toString(number: IContent){
+    
+
+
+
+    // id: number;
+    // name: string;
+    // description?: string;
+    // author: string;
+    // imgSrc?: string;
+    // type: string;
+    // tags?: string[];
+
+}
+
+
 
 }

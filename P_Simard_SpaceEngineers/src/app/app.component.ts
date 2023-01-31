@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IContent } from './models/IContent'
+import { IContent } from './models/IContent';
 
 @Component({
   selector: 'app-root',

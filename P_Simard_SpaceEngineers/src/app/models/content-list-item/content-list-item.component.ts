@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IContent } from '../IContent';
+
 
 @Component({
   selector: 'app-content-list-item',
@@ -8,7 +10,6 @@ import { Component } from '@angular/core';
 export class ContentListItemComponent {
 
 
-
-  
+@Input() contentItem?: IContent;  
 
 }

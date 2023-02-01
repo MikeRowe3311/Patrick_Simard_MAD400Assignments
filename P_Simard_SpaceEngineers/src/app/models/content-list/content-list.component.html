@@ -1,10 +1,10 @@
 <p>content-list works!</p>
 
 //1
-<app-content-list-item>
+<app-content-list-item *ngFor = "let planets of listOfPlanets" [contentItem]="planets">
 
 </app-content-list-item>
-//2
+<!-- //2
 <app-content-list-item>
 
 </app-content-list-item>
@@ -31,4 +31,4 @@
 //8
 <app-content-list-item>
     
-</app-content-list-item>
+</app-content-list-item> -->

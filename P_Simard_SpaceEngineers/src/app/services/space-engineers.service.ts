@@ -14,8 +14,46 @@ getContent(): Observable<IContent[]>{
   return of(listOfPlanets);
 }
 
+//Crudding methods below
+
+getIndex(idNum: number){
+  let planetFound = listOfPlanets.find(planet => {
+    if(planet.id == idNum){
+      return planet;
+    }
+    return null;
+  }
+  );
+  return of(planetFound);
+}
 
 
+addItem(newItem: IContent){
+  listOfPlanets.push(newItem);
+  return of(listOfPlanets);
+}
+
+
+updateItem(itemToUpdate: IContent){
+  listOfPlanets.forEach(planet=>{
+    if(planet.id = itemToUpdate.id){
+      planet = itemToUpdate;
+    }
+  })
+  return of(listOfPlanets);
+}
+
+
+removeItem(idNum: number){
+  var itemRemoved;
+  listOfPlanets.forEach(planet=>{
+    if(planet.id = idNum){
+      itemRemoved = planet;
+      delete listOfPlanets[itemRemoved.id];
+    }
+  })
+  return of(itemRemoved);
+}
 
 
 

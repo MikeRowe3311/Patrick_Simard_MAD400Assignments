@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IContent } from '../IContent';
+import { IContent } from '../icontent';
 
 
 @Component({

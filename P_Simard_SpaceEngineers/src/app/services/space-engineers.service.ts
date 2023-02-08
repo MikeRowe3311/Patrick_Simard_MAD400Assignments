@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { listOfPlanets } from '../data/mock-content';
-import { IContent } from '../models/IContent';
+import { IContent } from '../models/icontent';
 
 @Injectable({
   providedIn: 'root'

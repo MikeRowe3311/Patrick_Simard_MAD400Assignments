@@ -16,12 +16,27 @@ getContent(): Observable<IContent[]>{
 
 //Crudding methods below
 
-getIndex(idNum: number){
-  let planetFound = listOfPlanets.find(planet => {
+// getIndex(idNum: number): Observable<IContent>{
+//   let planetFound = listOfPlanets.find(planet => {
+//     if(planet.id == idNum){
+//       return planet;
+//     }
+//     return null;
+//   }
+//   );
+//   return of(planetFound);
+// }
+getIndex(idNum: number): Observable<IContent>{
+  let planetFound: IContent = {
+    id: -1,
+    name: "DUMMY",
+    author: "DUMMY",
+    type: "DUMMY"
+  }
+  listOfPlanets.find(planet => {
     if(planet.id == idNum){
-      return planet;
+      planetFound = planet
     }
-    return null;
   }
   );
   return of(planetFound);

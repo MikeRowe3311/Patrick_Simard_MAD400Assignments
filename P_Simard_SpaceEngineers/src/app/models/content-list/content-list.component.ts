@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { listOfPlanets } from 'src/app/data/mock-content';
 import { SpaceEngineersService } from 'src/app/services/space-engineers.service';
 import { IContent } from '../icontent';
@@ -8,7 +8,7 @@ import { IContent } from '../icontent';
   templateUrl: './content-list.component.html',
   styleUrls: ['./content-list.component.scss']
 })
-export class ContentListComponent {
+export class ContentListComponent implements OnInit{
 
   listOfPlanets: IContent[] = [];
 

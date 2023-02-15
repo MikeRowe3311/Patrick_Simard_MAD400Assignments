@@ -11,7 +11,8 @@
 
     "newinterface": "ng generate interface",
     "newclass": "ng generate class",
-    "newcomponent": "ng generate component"
+    "newcomponent": "ng generate component",
+    "newRouting": "ng generate module app--routing --flat"
 
     
   },

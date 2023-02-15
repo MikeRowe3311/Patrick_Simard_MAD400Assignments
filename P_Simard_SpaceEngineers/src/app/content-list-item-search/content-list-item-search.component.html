@@ -1,1 +1,14 @@
-<p>content-list-item-search works!</p>
+
+
+<div>
+<label>
+    Item ID: <input type="number" #customIdNumberInput>
+</label>
+<button (click)="getTheNewItem(customIdNumberInput.value)">Add Item</button>
+</div>
+
+
+
+
+<app-content-list-item [contentItem]="planet" class="special-item">
+</app-content-list-item>

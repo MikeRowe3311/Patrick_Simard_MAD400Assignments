@@ -26,10 +26,21 @@ getContent(): Observable<IContent[]>{
 //   );
 //   return of(planetFound);
 // }
+
+
+
+
+
+// for (let i = 0; i < listOfPlanets.length; i ++){
+  //   if(planet.id == idNum){
+  //     planetFound = planet
+  //   }
+
+
 getIndex(idNum: number): Observable<IContent>{
   let planetFound: IContent = {
     id: -1,
-    name: "DUMMY",
+    name: "ERROR: NOT FOUND",
     author: "DUMMY",
     type: "DUMMY"
   }

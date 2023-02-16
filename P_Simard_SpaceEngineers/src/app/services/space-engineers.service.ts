@@ -30,13 +30,6 @@ getContent(): Observable<IContent[]>{
 
 
 
-
-// for (let i = 0; i < listOfPlanets.length; i ++){
-  //   if(planet.id == idNum){
-  //     planetFound = planet
-  //   }
-
-
 getIndex(idNum: number): Observable<IContent>{
   let planetFound: IContent = {
     id: -1,

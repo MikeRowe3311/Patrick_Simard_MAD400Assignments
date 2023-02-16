@@ -1,8 +1,8 @@
 <!-- <p>content-list-item works!</p> -->
-<h2>{{contentItem?.name}}</h2>
+<h2><a [routerLink]="['/content/' + contentItem!.id]">{{contentItem?.name}}</a></h2>
 <img src="{{contentItem?.imgSrc}}">
-<p>{{contentItem?.description}}</p>
-<p>{{contentItem?.author}}</p>
+<!-- <p>{{contentItem?.description}}</p> -->
+<!-- <p>{{contentItem?.author}}</p> -->
 <p>{{contentItem?.type}}</p>
 <p>{{contentItem?.tags}}</p>
 
